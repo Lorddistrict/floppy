@@ -1,0 +1,10 @@
+---
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - 127.0.0.1:7000:80
+
